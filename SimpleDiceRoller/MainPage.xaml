@@ -5,9 +5,9 @@
 
 
     <VerticalStackLayout
-        Padding="30,0"
+        Padding="15,0"
         Spacing="25">
-        <Grid Padding="10">
+        <Grid Padding="5">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="0.15*"/>
                 <ColumnDefinition />
