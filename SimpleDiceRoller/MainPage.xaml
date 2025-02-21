@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SimpleDiceRoller.MainPage">
+
+
+    <VerticalStackLayout
+        Padding="30,0"
+        Spacing="25">
+        <Grid Padding="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.15*"/>
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Label
+                FontSize="30"
+                Grid.Column="0"
+                Text="+" />
+            <ScrollView Grid.Column="1" Orientation="Horizontal">
+                <HorizontalStackLayout 
+                    Spacing="5">
+                    <Button Text="D2" />
+                    <Button Text="D4" />
+                    <Button Text="D6" />
+                    <Button Text="D8" />
+                    <Button Text="D10" />
+                    <Button Text="D12" />
+                    <Button Text="D20" />
+                    <Button Text="D?" />
+                </HorizontalStackLayout>
+            </ScrollView>
+        </Grid>
+
+       
+    </VerticalStackLayout>
+
+
+</ContentPage>
