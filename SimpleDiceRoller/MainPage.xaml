@@ -30,6 +30,20 @@
                 </HorizontalStackLayout>
             </ScrollView>
         </Grid>
+        <Grid x:Name="diceGrid">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+        </Grid>
 
        
     </VerticalStackLayout>
