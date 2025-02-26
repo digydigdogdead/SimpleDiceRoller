@@ -31,11 +31,12 @@
                 </HorizontalStackLayout>
             </ScrollView>
         </Grid>
-        <FlexLayout x:Name="diceGrid">
+        <ScrollView Orientation="Vertical">
+            <FlexLayout x:Name="diceGrid">
             
-        </FlexLayout>
+            </FlexLayout>
+        </ScrollView>
 
-       
     </VerticalStackLayout>
 
 
