@@ -19,14 +19,15 @@
             <ScrollView Grid.Column="1" Orientation="Horizontal">
                 <HorizontalStackLayout 
                     Spacing="5">
-                    <Button Text="D2" />
-                    <Button Text="D4" />
-                    <Button Text="D6" />
-                    <Button Text="D8" />
-                    <Button Text="D10" />
-                    <Button Text="D12" />
-                    <Button Text="D20" />
-                    <Button Text="D?" />
+                    <Button Text="D2" Clicked="GenerateDice"/>
+                    <Button Text="D4" Clicked="GenerateDice"/>
+                    <Button Text="D6" Clicked="GenerateDice"/>
+                    <Button Text="D8" Clicked="GenerateDice"/>
+                    <Button Text="D10" Clicked="GenerateDice"/>
+                    <Button Text="D12" Clicked="GenerateDice"/>
+                    <Button Text="D20" Clicked="GenerateDice"/>
+                    <Button Text="D100" Clicked="GenerateDice" />
+                    <Button Text="D?" Clicked="MakeCustomDice"/>
                 </HorizontalStackLayout>
             </ScrollView>
         </Grid>
