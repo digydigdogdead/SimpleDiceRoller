@@ -22,7 +22,14 @@
             else if (sender == btn_d20) maxValue = 20;
             else maxValue = 100;
 
-            Console.WriteLine(maxValue);
+            // Replace the following code with code that generates a Die object when I know how to do that.
+            Random rand = new();
+            int result = rand.Next(maxValue) + 1;
+
+            Label label = new();
+            label.Text = result.ToString();
+
+            diceGrid.Add(label);
         }
 
         public void MakeCustomDie(object sender, EventArgs e)
