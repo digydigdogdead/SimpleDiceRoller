@@ -1,9 +1,9 @@
-﻿namespace SimpleDiceRoller
+﻿using SimpleDiceRoller.CustomViews;
+
+namespace SimpleDiceRoller
 {
     public partial class MainPage : ContentPage
     {
-        int count = 0;
-
         public MainPage()
         {
             InitializeComponent();
@@ -22,14 +22,14 @@
             else if (sender == btn_d20) maxValue = 20;
             else maxValue = 100;
 
-            // Replace the following code with code that generates a Die object when I know how to do that.
             Random rand = new();
             int result = rand.Next(maxValue) + 1;
 
-            Label label = new();
-            label.Text = result.ToString();
+            Die die = new();
+            die.dName = "d" + maxValue.ToString();
+            die.RollValue = result.ToString();
 
-            diceGrid.Add(label);
+            diceGrid.Add(die);
         }
 
         public void MakeCustomDie(object sender, EventArgs e)
