@@ -1,4 +1,5 @@
 ﻿using SimpleDiceRoller.CustomViews;
+using System.Threading.Tasks;
 
 namespace SimpleDiceRoller
 {
@@ -9,7 +10,7 @@ namespace SimpleDiceRoller
             InitializeComponent();
         }
 
-        public void GenerateDie(object sender, EventArgs e)
+        public void AddDieClicked(object sender, EventArgs e)
         {
             int maxValue;
 
@@ -22,6 +23,19 @@ namespace SimpleDiceRoller
             else if (sender == btn_d20) maxValue = 20;
             else maxValue = 100;
 
+            GenerateDie(maxValue);
+        }
+
+        public async void MakeCustomDie(object sender, EventArgs e)
+        {
+            bool result = int.TryParse(await DisplayPromptAsync(title: "Custom Die", "What is the maximum value of your die?", keyboard: Keyboard.Numeric), out int newDieMax);
+            if (!result) return;
+
+            GenerateDie(newDieMax);
+        }
+
+        public void GenerateDie(int maxValue)
+        {
             Random rand = new();
             int result = rand.Next(maxValue) + 1;
 
@@ -31,11 +45,6 @@ namespace SimpleDiceRoller
             die.MaxValue = maxValue;
 
             diceGrid.Add(die);
-        }
-
-        public void MakeCustomDie(object sender, EventArgs e)
-        {
-
         }
     }
 

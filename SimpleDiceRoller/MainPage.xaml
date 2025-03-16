@@ -20,14 +20,14 @@
             <ScrollView Grid.Column="1" Orientation="Horizontal">
                 <HorizontalStackLayout 
                     Spacing="5">
-                    <Button Text="D2" Clicked="GenerateDie" x:Name="btn_d2"/>
-                    <Button Text="D4" Clicked="GenerateDie" x:Name="btn_d4"/>
-                    <Button Text="D6" Clicked="GenerateDie" x:Name="btn_d6"/>
-                    <Button Text="D8" Clicked="GenerateDie" x:Name="btn_d8"/>
-                    <Button Text="D10" Clicked="GenerateDie" x:Name="btn_d10"/>
-                    <Button Text="D12" Clicked="GenerateDie" x:Name="btn_d12"/>
-                    <Button Text="D20" Clicked="GenerateDie" x:Name="btn_d20"/>
-                    <Button Text="D100" Clicked="GenerateDie" x:Name="btn_d100"/>
+                    <Button Text="D2" Clicked="AddDieClicked" x:Name="btn_d2"/>
+                    <Button Text="D4" Clicked="AddDieClicked" x:Name="btn_d4"/>
+                    <Button Text="D6" Clicked="AddDieClicked" x:Name="btn_d6"/>
+                    <Button Text="D8" Clicked="AddDieClicked" x:Name="btn_d8"/>
+                    <Button Text="D10" Clicked="AddDieClicked" x:Name="btn_d10"/>
+                    <Button Text="D12" Clicked="AddDieClicked" x:Name="btn_d12"/>
+                    <Button Text="D20" Clicked="AddDieClicked" x:Name="btn_d20"/>
+                    <Button Text="D100" Clicked="AddDieClicked" x:Name="btn_d100"/>
                     <Button Text="D?" Clicked="MakeCustomDie"/>
                 </HorizontalStackLayout>
             </ScrollView>
