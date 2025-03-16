@@ -1,3 +1,5 @@
+using System.Threading.Tasks;
+
 namespace SimpleDiceRoller.CustomViews;
 
 public partial class Die : ContentView
@@ -5,6 +7,7 @@ public partial class Die : ContentView
 	public Die()
 	{
 		InitializeComponent();
+
 	}
 
 	public static readonly BindableProperty dNameProperty =
@@ -33,4 +36,5 @@ public partial class Die : ContentView
 		int newValue = rand.Next(MaxValue) + 1;
 		RollValue = newValue.ToString();
 	}
+
 }
