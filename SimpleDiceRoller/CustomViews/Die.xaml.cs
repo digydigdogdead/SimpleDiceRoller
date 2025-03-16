@@ -10,6 +10,8 @@ public partial class Die : ContentView
 	public static readonly BindableProperty dNameProperty =
 		BindableProperty.Create("dName", typeof(string), typeof(Die));
 
+	public int MaxValue { get; set; }
+
 	public string dName
 	{
 		get => (string)GetValue(dNameProperty);
@@ -23,5 +25,12 @@ public partial class Die : ContentView
 	{
 		get => (string)GetValue(RollValueProperty);
 		set => SetValue(RollValueProperty, value);
+	}
+
+	public void ReRoll(object sender, TappedEventArgs args)
+	{
+		Random rand = new();
+		int newValue = rand.Next(MaxValue) + 1;
+		RollValue = newValue.ToString();
 	}
 }

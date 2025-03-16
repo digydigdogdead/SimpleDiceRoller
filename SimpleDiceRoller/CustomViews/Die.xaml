@@ -4,8 +4,12 @@
              x:Class="SimpleDiceRoller.CustomViews.Die"
              x:Name="root">
     <Grid>
-        <Image Source="diceback.png" Aspect="Center" />
-        <VerticalStackLayout>
+        <Image Source="diceback.png" Aspect="Center">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer Tapped="ReRoll" NumberOfTapsRequired="1" />
+            </Image.GestureRecognizers>
+        </Image>
+            <VerticalStackLayout>
             <Label 
                 x:Name="RollValueLabel"
                 Text="{Binding RollValue, Source={x:Reference root}}"

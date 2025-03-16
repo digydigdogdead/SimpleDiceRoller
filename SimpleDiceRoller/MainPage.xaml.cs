@@ -28,6 +28,7 @@ namespace SimpleDiceRoller
             Die die = new();
             die.dName = "d" + maxValue.ToString();
             die.RollValue = result.ToString();
+            die.MaxValue = maxValue;
 
             diceGrid.Add(die);
         }
