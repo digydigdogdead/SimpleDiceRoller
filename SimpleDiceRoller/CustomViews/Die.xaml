@@ -3,15 +3,18 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SimpleDiceRoller.CustomViews.Die"
              x:Name="root">
-    <VerticalStackLayout>
-        <Label 
-            x:Name="RollValueLabel"
-            Text="{Binding RollValue, Source={x:Reference root}}"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-        <Label x:Name="dNameLabel"
-               HorizontalOptions="Center"
-               VerticalOptions="End"
-               Text="{Binding dName, Source={x:Reference root}}"/>
-    </VerticalStackLayout>
+    <Grid>
+        <Image Source="diceback.png" Aspect="Center" />
+        <VerticalStackLayout>
+            <Label 
+                x:Name="RollValueLabel"
+                Text="{Binding RollValue, Source={x:Reference root}}"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+            <Label x:Name="dNameLabel"
+                   HorizontalOptions="Center"
+                   VerticalOptions="End"
+                   Text="{Binding dName, Source={x:Reference root}}"/>
+        </VerticalStackLayout>
+    </Grid>
 </ContentView>
