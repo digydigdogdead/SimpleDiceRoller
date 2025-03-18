@@ -33,7 +33,7 @@
             </ScrollView>
         </Grid>
         <ScrollView Orientation="Vertical">
-            <FlexLayout x:Name="diceGrid" Wrap="Wrap">
+            <FlexLayout x:Name="diceGrid" Wrap="Wrap" x:FieldModifier="public" >
                 
             </FlexLayout>
         </ScrollView>

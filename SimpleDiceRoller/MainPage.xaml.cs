@@ -39,7 +39,7 @@ namespace SimpleDiceRoller
             Random rand = new();
             int result = rand.Next(maxValue) + 1;
 
-            Die die = new();
+            Die die = new(this);
             die.dName = "d" + maxValue.ToString();
             die.RollValue = result.ToString();
             die.MaxValue = maxValue;

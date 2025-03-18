@@ -4,16 +4,17 @@ namespace SimpleDiceRoller.CustomViews;
 
 public partial class Die : ContentView
 {
-	public Die()
+	public Die(MainPage main)
 	{
 		InitializeComponent();
-
+		Main = main;
 	}
 
 	public static readonly BindableProperty dNameProperty =
 		BindableProperty.Create("dName", typeof(string), typeof(Die));
 
 	public int MaxValue { get; set; }
+	public MainPage Main { get; set; }
 
 	public string dName
 	{
@@ -39,6 +40,6 @@ public partial class Die : ContentView
 
     private void RemoveButton_Clicked(object sender, TappedEventArgs args)
     {
-		Console.WriteLine("You're gone.");
+        bool worked = Main.diceGrid.Remove(this);
     }
 }
