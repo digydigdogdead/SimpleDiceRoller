@@ -10,16 +10,26 @@
                 <TapGestureRecognizer Tapped="ReRoll" NumberOfTapsRequired="1" />
             </Image.GestureRecognizers>
         </Image>
-            <VerticalStackLayout Grid.Row="2">
+        <VerticalStackLayout Grid.Row="2">
+            <Label
+                x:Name="xLabel"
+                Text="X"
+                VerticalOptions="Start"
+                HorizontalOptions="End">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="RemoveButton_Clicked" NumberOfTapsRequired="1" />
+                </Label.GestureRecognizers>
+            </Label>
             <Label 
                 x:Name="RollValueLabel"
                 Text="{Binding RollValue, Source={x:Reference root}}"
                 VerticalOptions="Center" 
-                HorizontalOptions="Center" />
+                HorizontalOptions="Center"
+                FontSize="Large"/>
             <Label x:Name="dNameLabel"
-                   HorizontalOptions="Center"
-                   VerticalOptions="End"
-                   Text="{Binding dName, Source={x:Reference root}}"/>
+                    HorizontalOptions="Center"
+                    VerticalOptions="End"
+                    Text="{Binding dName, Source={x:Reference root}}"/>
         </VerticalStackLayout>
     </Grid>
 </ContentView>

@@ -37,4 +37,8 @@ public partial class Die : ContentView
 		RollValue = newValue.ToString();
 	}
 
+    private void RemoveButton_Clicked(object sender, TappedEventArgs args)
+    {
+		Console.WriteLine("You're gone.");
+    }
 }
