@@ -37,7 +37,7 @@
                 
             </FlexLayout>
         </ScrollView>
-
+        <Button x:Name="ClearAllButton" Clicked="ClearAllButton_Clicked" Text="Clear All" />
     </VerticalStackLayout>
 
 

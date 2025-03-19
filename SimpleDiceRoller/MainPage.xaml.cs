@@ -46,6 +46,11 @@ namespace SimpleDiceRoller
 
             diceGrid.Add(die);
         }
+
+        private void ClearAllButton_Clicked(object sender, EventArgs e)
+        {
+            diceGrid.Clear();
+        }
     }
 
 }
