@@ -32,8 +32,8 @@
                 </HorizontalStackLayout>
             </ScrollView>
         </Grid>
-        <ScrollView Orientation="Vertical">
-            <FlexLayout x:Name="diceGrid" Wrap="Wrap" x:FieldModifier="public" >
+        <ScrollView Orientation="Vertical" HeightRequest="550">
+            <FlexLayout x:Name="diceGrid" Wrap="Wrap" x:FieldModifier="public" VerticalOptions="Start">
                 
             </FlexLayout>
         </ScrollView>

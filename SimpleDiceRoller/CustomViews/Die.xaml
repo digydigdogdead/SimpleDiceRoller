@@ -4,32 +4,33 @@
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              x:Class="SimpleDiceRoller.CustomViews.Die"
              x:Name="root">
-    <Grid>
-        <Image Source="diceback.png" Aspect="Center" Grid.Row="2">
-            <Image.GestureRecognizers>
-                <TapGestureRecognizer Tapped="ReRoll" NumberOfTapsRequired="1" />
-            </Image.GestureRecognizers>
-        </Image>
-        <VerticalStackLayout Grid.Row="2">
-            <Label
-                x:Name="xLabel"
-                Text="X"
-                VerticalOptions="Start"
-                HorizontalOptions="End">
-                <Label.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="RemoveButton_Clicked" NumberOfTapsRequired="1" />
-                </Label.GestureRecognizers>
-            </Label>
-            <Label 
-                x:Name="RollValueLabel"
-                Text="{Binding RollValue, Source={x:Reference root}}"
-                VerticalOptions="Center" 
-                HorizontalOptions="Center"
-                FontSize="Large"/>
-            <Label x:Name="dNameLabel"
+    <HorizontalStackLayout>
+        <Grid>
+            <Image Source="diceback.png" Aspect="Center">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="ReRoll" NumberOfTapsRequired="1" />
+                </Image.GestureRecognizers>
+            </Image>
+                <VerticalStackLayout>
+                    <Label></Label>
+                    <Label 
+                    x:Name="RollValueLabel"
+                    Text="{Binding RollValue, Source={x:Reference root}}"
                     HorizontalOptions="Center"
-                    VerticalOptions="End"
-                    Text="{Binding dName, Source={x:Reference root}}"/>
-        </VerticalStackLayout>
-    </Grid>
+                    FontSize="Large"/>
+                <Label x:Name="dNameLabel"
+                        HorizontalOptions="Center"
+                        Text="{Binding dName, Source={x:Reference root}}"/>
+            </VerticalStackLayout>
+        </Grid>
+        <Label
+            x:Name="xLabel"
+            Text="X"
+            VerticalOptions="Start"
+            FontSize="20">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="RemoveButton_Clicked" NumberOfTapsRequired="1" />
+            </Label.GestureRecognizers>
+        </Label>
+    </HorizontalStackLayout>
 </ContentView>
