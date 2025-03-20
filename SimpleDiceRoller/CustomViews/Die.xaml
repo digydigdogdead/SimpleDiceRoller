@@ -17,17 +17,20 @@
                     x:Name="RollValueLabel"
                     Text="{Binding RollValue, Source={x:Reference root}}"
                     HorizontalOptions="Center"
-                    FontSize="Large"/>
+                    FontSize="Large"
+                    TextColor="Black"/>
                 <Label x:Name="dNameLabel"
                         HorizontalOptions="Center"
-                        Text="{Binding dName, Source={x:Reference root}}"/>
+                        Text="{Binding dName, Source={x:Reference root}}"
+                        TextColor="Black"/>
             </VerticalStackLayout>
         </Grid>
         <Label
             x:Name="xLabel"
             Text="X"
             VerticalOptions="Start"
-            FontSize="20">
+            FontSize="20"
+            TextColor="DarkRed">
             <Label.GestureRecognizers>
                 <TapGestureRecognizer Tapped="RemoveButton_Clicked" NumberOfTapsRequired="1" />
             </Label.GestureRecognizers>
