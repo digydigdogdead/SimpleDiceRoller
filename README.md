@@ -9,3 +9,6 @@ I use dice rolling apps on my phone frequently, and am often frustrated by how l
 - Remove a die from the grid by tapping the "X" in the top right of the die.
 - Add as many dice as you like! Most screens will fit 16 dice, but if for some reason you want more than that at once, then the app will let you scroll to keep up with as many dice as you've added.
 - Clear all dice you've added by clicking the "Clear All" button at the bottom of the screen
+
+### Note:
+This app was tested on Google Pixel emulators and on my own personal Redmii device. You may have different experiences on your own android device. If you do, please let me know.
