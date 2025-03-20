@@ -17,7 +17,11 @@
             <Label
                 FontSize="30"
                 Grid.Column="0"
-                Text="+" />
+                Text="+" >
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="PlusSign_Tapped" NumberOfTapsRequired="1"/>
+                </Label.GestureRecognizers>
+            </Label>
             <ScrollView Grid.Column="1" Orientation="Horizontal">
                 <HorizontalStackLayout 
                     Spacing="5">

@@ -51,6 +51,20 @@ namespace SimpleDiceRoller
         {
             diceGrid.Clear();
         }
+
+        private async void PlusSign_Tapped(object sender, TappedEventArgs e)
+        {
+            await DisplayAlert("How To Use", """
+                Tap any of the buttons to the left to add any of the standard RPG dice. It will appear below with a rolled value.
+                Scroll to the right with the numbers and tap the "D?" button to create a custom dice and enter the number of sides you'd like it to have.
+
+                Tap any die to reroll its value. 
+
+                Tap the "X" next to a die to remove it.
+
+                To get rid of all the dice at once, tap the "Clear All" button at the bottom of the screen.
+                """, "Okay");
+        }
     }
 
 }
