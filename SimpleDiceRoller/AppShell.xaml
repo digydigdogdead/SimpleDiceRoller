@@ -5,7 +5,8 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:SimpleDiceRoller"
     Shell.FlyoutBehavior="Disabled"
-    Title="SimpleDiceRoller">
+    Title="SimpleDiceRoller"
+    BackgroundColor="LightGray">
 
     <ShellContent
         Title="Simple Dice Roller"

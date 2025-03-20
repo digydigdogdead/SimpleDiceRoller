@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:die="clr-namespace:SimpleDiceRoller.CustomViews"
-             x:Class="SimpleDiceRoller.MainPage">
+             x:Class="SimpleDiceRoller.MainPage"
+             BackgroundColor="DarkGray">
 
 
     <VerticalStackLayout
