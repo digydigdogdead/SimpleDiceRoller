@@ -55,8 +55,8 @@ namespace SimpleDiceRoller
         private async void PlusSign_Tapped(object sender, TappedEventArgs e)
         {
             await DisplayAlert("How To Use", """
-                Tap any of the buttons to the left to add any of the standard RPG dice. It will appear below with a rolled value.
-                Scroll to the right with the numbers and tap the "D?" button to create a custom dice and enter the number of sides you'd like it to have.
+                Tap any of the buttons to the right to add any of the standard RPG dice. It will appear below with a rolled value.
+                Scroll to the right and tap the "D?" button to create a custom die and enter the number of sides you'd like it to have.
 
                 Tap any die to reroll its value. 
 
